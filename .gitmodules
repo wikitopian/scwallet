@@ -1,0 +1,9 @@
+[submodule "lib/jquery-ui"]
+	path = lib/jquery-ui
+	url = https://github.com/jquery/jquery-ui.git
+[submodule "lib/jquery-qrcode"]
+	path = lib/jquery-qrcode
+	url = https://github.com/jeromeetienne/jquery-qrcode.git
+[submodule "lib/ethers.js"]
+	path = lib/ethers.js
+	url = https://github.com/ethers-io/ethers.js.git

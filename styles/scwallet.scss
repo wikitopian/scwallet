@@ -1,0 +1,352 @@
+.woocommerce-MyAccount-navigation {
+	ul {
+		li.woocommerce-MyAccount-navigation-link--scwallet a::before {
+			content: "\f3d1"
+		}
+	}
+}
+
+.metamask-enabled {
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 1em;
+}
+
+.metamask-disabled {
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 1em;
+}
+
+span#scwallet_balance {
+	display: block;
+	min-height: 1.5em;
+	text-align: center;
+	color: #228b22;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+
+/* scwallet TABS */
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+	border: 1px solid gray;
+	background: #228b22;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a:before {
+	color: white;
+}
+
+.hentry .entry-content #scwallet a:not(.button) {
+	text-decoration: none;
+}
+
+#scwallet_gas_icon_deposit {
+	font-family: 'Font Awesome 5 Free';
+	margin-right: 1em;
+	color: red;
+}
+
+#scwallet_gas_icon_withdraw {
+	font-family: 'Font Awesome 5 Free';
+	margin-right: 1em;
+	color: red;
+}
+
+/* scwallet DEPOSIT */
+
+#scwallet_deposit {
+
+	text-align: center;
+
+	#scwallet_deposit_address_copy {
+		font-family: 'Font Awesome 5 Free';
+		margin-left: 1em;
+		color: #c4e2ca;
+	}
+
+	#scwallet_deposit_address_copy:hover {
+		color: #228b22;
+		cursor: copy;
+	}
+
+	#scwallet_deposit_address_field {
+		position: absolute;
+		left: -9999px;
+	}
+
+}
+
+#scwallet_deposit_top {
+
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 2em;
+
+	#scwallet_deposit_qr {
+		width: 196px;
+		height: 196px;
+	}
+
+	@media (max-width: 767px) {
+		img {
+			display: none;
+		}
+	}
+
+	img {
+		max-height: 48px;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	img#scwallet_transfer_rx {
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: right;
+	}
+}
+
+#scwallet_deposit_bottom {
+
+	@media (max-width: 767px) {
+		flex-direction: column;
+	}
+
+
+	display: flex;
+	margin-top: 2em;
+	justify-content: space-evenly;
+
+	> div {
+		width: 45%;
+		margin-left:  auto;
+		margin-right: auto;
+
+		@media (max-width: 767px) {
+			width: 100%;
+			marign-top: 2em;
+		}
+
+	}
+
+}
+
+#scwallet {
+
+	.ui-progressbar {
+		margin-left: auto;
+		margin-right: auto;
+
+		max-width: 250px;
+	}
+
+	.ui-progressbar-value {
+		background-color: #228b22;
+	}
+
+}
+
+#scwallet_transfer {
+
+	tr#scwallet_transfer_fields {
+		@media (max-width: 767px) {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+
+			input[type=text] {
+				width: 100%;
+			}
+		}
+
+}
+
+}
+
+/* scwallet WITHDRAW */
+
+div#scwallet_withdraw {
+
+	div#scwallet_withdraw_address {
+		padding-bottom: 2em;
+
+		span {
+			display: block;
+		}
+
+		input#scwallet_withdraw_address {
+			width: 100%;
+		}
+
+	}
+
+	div#scwallet_withdraw_amountgas {
+
+		@media (min-width: 768px) {
+			display: flex;
+		}
+
+
+		div#scwallet_withdraw_amount {
+			min-width: 50%;
+			padding-bottom: 2em;
+
+			span {
+				display: block;
+			}
+
+			input {
+				width: 100%;
+			}
+
+		}
+
+		div#scwallet_withdraw_gas {
+			min-width: 50%;
+			padding-bottom: 2em;
+			text-align: center;
+		}
+
+	}
+
+	div#scwallet_withdraw_subtotals {
+		padding-bottom: 2em;
+	}
+
+	div#scwallet_withdraw_return_gas {
+		text-align: center;
+	}
+
+}
+
+#scwallet {
+
+	input[type=submit] {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+}
+
+/* HISTORY TABLE */
+
+#scwallet_history_pagination {
+	text-align: center;
+	font-weight: bold;
+}
+
+.scwallet_history_id {
+
+	:before {
+		color: #228b22;
+	}
+
+}
+
+.scwallet_history_from img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.scwallet_history_to img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.scwallet_history_id, .scwallet_history_time, .scwallet_history_from, .scwallet_history_to {
+	text-align: center;
+}
+
+.scwallet_history_amount {
+	text-align: right;
+}
+
+.scwallet_history_id :before {
+	margin-right: 0;
+}
+
+.scwallet_manual:before {
+	font-family: 'Font Awesome 5 Free';
+	margin-right: 0.5em;
+	content: "\f06A";
+	color: #228b22;
+}
+
+.scwallet_deposit:before {
+	font-family: 'Font Awesome 5 Free';
+	margin-right: 0.5em;
+	content: "\f358";
+	color: #228b22;
+}
+
+.scwallet_transfer:before {
+	font-family: 'Font Awesome 5 Free';
+	margin-right: 0.5em;
+	content: "\f35A";
+	color: #228b22;
+}
+
+
+.scwallet_withdraw:before {
+	font-family: 'Font Awesome 5 Free';
+	margin-right: 0.5em;
+	content: "\f35B";
+	color: #228b22;
+}
+
+.scwallet_order:before {
+	font-family: 'Font Awesome 5 Free';
+	margin-right: 0.5em;
+	content: "\f49E";
+	color: #228b22;
+}
+
+.scwallet_giant {
+
+	@media (max-width: 767px) {
+		button {
+			width: 100%;
+			margin-top: 1em;
+		}
+	}
+
+	@media (min-width: 768px) {
+		display: flex;
+		justify-content: space-between;
+	}
+
+}
+
+table thead th {
+	text-align: center;
+}
+
+table td,
+table th {
+	padding: 0.5em;
+	vertical-align: middle;
+}
+
+#scwallet_history_download {
+	text-align: right;
+	font-weight: bold;
+}
+
+#scwallet_history_download:after {
+	font-family: 'Font Awesome 5 Free';
+	margin-left: 1em;
+	color: #228b22;
+	content: "\f6dd";
+}

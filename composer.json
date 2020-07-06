@@ -1,0 +1,16 @@
+{
+    "name": "plurnk/scwallet",
+    "type": "project",
+    "license": "gplv3",
+    "authors": [
+        {
+            "name": "parrott",
+            "email": "parrott.matt@protonmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "furqansiddiqui/erc20-php": "^0.1.3"
+    },
+    "prefer-stable": true
+}

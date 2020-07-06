@@ -1,0 +1,7 @@
+styles/scwallet.css
+styles/scwallet.css.map
+styles/.sass-cache/
+scratch/
+
+/vendor/
+composer.lock
