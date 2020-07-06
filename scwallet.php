@@ -4,6 +4,8 @@
  * Version: 20200705
  */
 
+require_once( 'classes/scwallet-admin.php' );
+
 require_once( 'classes/scwallet-db.php' );
 require_once( 'classes/scwallet-bank.php' );
 require_once( 'classes/scwallet-account-page.php' );
@@ -18,7 +20,9 @@ class SCWallet {
 
 	public $debug;
 	public $version;
+	public $settings;
 
+	public  $admin;
 	public  $bank;
 	private $account_page;
 	private $processor;
@@ -28,10 +32,27 @@ class SCWallet {
 	public function __construct( $debug = false, $version = '20190330' ) {
 		$this->debug = $debug;
 
-		if( $debug ) {
+		$this->settings = get_option( 'scwallet' );
+
+		if( !$this->settings ) {
+
+			$this->settings =
+			[
+				'debug' => $this->debug,
+				'host'  => '127.0.0.1',
+				'port'  => '8545',
+			];
+
+		update_option( 'scwallet', $this->settings );
+
+		}
+
+		if( $this->debug ) {
 			$version = rand( 14, 148814 );
 		}
 		$this->version = $version;
+
+		$this->admin        = new SCWallet_Admin( $this );
 
 		$this->bank         = new SCWallet_Bank( $this );
 
