@@ -13,8 +13,10 @@ class SCWallet_Crypto {
 	public function __construct() {
 		$this->online = false;
 
+		$settings = get_option( 'scwallet' );
+
 		try {
-			$this->geth  = new EthereumRPC( '127.0.0.1', 8545 );
+			$this->geth  = new EthereumRPC( $settings['host'], $settings['port'] );
 			$this->erc20 = new \ERC20\ERC20($this->geth);
 			$this->dai   = $this->erc20->token( '0x6b175474e89094c44da98b954eedeac495271d0f' );
 
