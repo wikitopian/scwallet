@@ -16,7 +16,7 @@ class SCWallet_Crypto {
 		try {
 			$this->geth  = new EthereumRPC( '127.0.0.1', 8545 );
 			$this->erc20 = new \ERC20\ERC20($this->geth);
-			$this->dai   = $this->erc20->token( '0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359' );
+			$this->dai   = $this->erc20->token( '0x6b175474e89094c44da98b954eedeac495271d0f' );
 
 			$this->online = true;
 		} catch( Exception $e ) {
