@@ -191,7 +191,7 @@ div#scwallet_withdraw {
 
 	}
 
-	div#scwallet_withdraw_amountgas {
+	div#scwallet_withdraw_amountsubs {
 
 		@media (min-width: 768px) {
 			display: flex;
@@ -212,20 +212,12 @@ div#scwallet_withdraw {
 
 		}
 
-		div#scwallet_withdraw_gas {
+		div#scwallet_withdraw_subtotals {
 			min-width: 50%;
 			padding-bottom: 2em;
 			text-align: center;
 		}
 
-	}
-
-	div#scwallet_withdraw_subtotals {
-		padding-bottom: 2em;
-	}
-
-	div#scwallet_withdraw_return_gas {
-		text-align: center;
 	}
 
 }

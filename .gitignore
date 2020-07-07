@@ -3,5 +3,6 @@ styles/scwallet.css.map
 styles/.sass-cache/
 scratch/
 
+/lib/
 /vendor/
 composer.lock

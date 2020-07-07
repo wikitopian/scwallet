@@ -371,13 +371,13 @@ class SCWallet_Account_Page {
 
 				<input
 					type="text"
-					placeholder="$12.34"
+					placeholder="0x123...789"
 					id="scwallet_withdraw_address"
 					/>
 
 			</div>
 
-			<div id="scwallet_withdraw_amountgas">
+			<div id="scwallet_withdraw_amountsubs">
 
 				<div id="scwallet_withdraw_amount">
 					<span>Amount:</span>
@@ -390,27 +390,10 @@ class SCWallet_Account_Page {
 
 				</div>
 
-				<div id="scwallet_withdraw_gas">
-					<span id="scwallet_gas_icon_withdraw" title="Send $2 (USD) worth of Ethereum to help anonymize your transactions (optional)">&#xF52F;</span>
-
-					<span title="Send $2 (USD) worth of Ethereum to help anonymize your transactions (optional)">
-						Gas Gauge -- <span id="scwallet_gas"></span>
-						<tiny><i>gwei</i></tiny>
-					</span>
-
-					<div id="scwallet_gauges_gas_bar_withdraw" title="Send $2 (USD) worth of Ethereum to help anonymize your transactions (optional)"></div>
-
-					<span id="scwallet_gas_refund">
-						<input type="checkbox" name="scwallet_gas_refund" id="scwallet_gas_refund" />
-						Gas Refund
-					<span>
-
+				<div id="scwallet_withdraw_subtotals">
+					SUBTOTALS
 				</div>
 
-			</div>
-
-			<div id="scwallet_withdraw_subtotals">
-				SUBTOTALS
 			</div>
 
 			<div id="scwallet_withdraw_submit">
