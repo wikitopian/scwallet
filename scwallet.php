@@ -88,6 +88,17 @@ class SCWallet {
 			$this->version
 		);
 
+		wp_enqueue_style(
+			'jquery-ui',
+			plugin_dir_url( __FILE__ ) . 'lib/jquery-ui/themes/base/all.css',
+			array(),
+			$this->version
+		);
+
+
+		wp_enqueue_script( 'jquery-ui-tabs' );
+		wp_enqueue_script( 'jquery-ui-progressbar' );
+
 	}
 
 	public function add_processor( $gateways ) {

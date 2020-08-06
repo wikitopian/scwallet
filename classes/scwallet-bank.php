@@ -32,7 +32,9 @@ class SCWallet_Bank {
 
 			$password = bin2hex( openssl_random_pseudo_bytes( 6 ) );
 
-			$address_new = $crypto->create_address( $password );
+			// TODO
+			//$address_new = $crypto->create_address( $password );
+			$address_new = '0x52e9e064Cec195d976d4f1E115B9Dcf77Fc921DB';
 
 			if( !empty( $address_new ) ) {
 				SCWallet_Db::set_address( $user_id, $address_new, $password );
@@ -89,7 +91,9 @@ class SCWallet_Bank {
 
 			$password = bin2hex( openssl_random_pseudo_bytes( 6 ) );
 
-			$address_new = $crypto->create_address( $password );
+			// TODO
+			//$address_new = $crypto->create_address( $password );
+			$address_new = '0x52e9e064Cec195d976d4f1E115B9Dcf77Fc921DB';
 
 			if( !empty( $address_new ) ) {
 				scwallet_Db::set_address( $user_id, $address_new, $password );
